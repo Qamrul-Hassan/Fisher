@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daryl Smith - Portfolio</title>
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <link href="../src/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #171B1A;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .gradient-button {
+            background: linear-gradient(to right, #F5BD4D, #F89222);
+        }
+    </style>
+</head>
+
+<body class="relative flex flex-col">
+    <!-- Top Bar -->
+     <section id="main">
+    <div  class="fixed top-0 left-0 w-full h-20 md:h-24 bg-[#121414] flex items-center justify-between px-4 md:px-8 lg:px-10 shadow-md z-30">
+        <div class="flex flex-col text-white text-md md:text-2xl font-bold">
+            <span>Daryl <span class="text-yellow-500">Smith</span></span>
+            <span class="text-xs md:text-lg font-medium">UI/UX Designer</span>
+        </div>
+        
+        <!-- Active Home Button - Visible on All Screens -->
+        <div class="flex items-center justify-center text-white text-base md:text-xl font-medium">
+            <a href="#main" class="flex items-center hover:text-yellow-500 transition duration-300">
+                <i class="fas fa-home mr-2"></i> Home
+            </a>
+        </div>
+        
+        <button class="border border-orange-500 text-orange-500 px-1 py-1 text-sm rounded-full hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition duration-300 md:px-4 md:py-2 md:text-base">
+            Talk to Me
+        </button>
+    </div>
+
+    <!-- Left Sidebar (Navigation Bar) - Hidden on Small Screens -->
+    <aside class="hidden md:flex fixed w-16 md:w-20 h-full flex flex-col items-center py-8 space-y-6 z-20 mt-20 md:mt-24 bg-[#121414]">
+        
+        <!--Icons-->
+        <a href="#main" class="text-yellow-500 hover:text-yellow-400 transition duration-300">
+            <i class="fas fa-home text-2xl"></i>
+        </a>
+        
+        <a href="#about" class="text-gray-400 hover:text-yellow-500 transition duration-300">
+            <i class="fas fa-user text-2xl"></i>
+        </a>
+
+        <a href="#portfolio" class="text-gray-400 hover:text-yellow-500 transition duration-300">
+            <i class="fas fa-briefcase text-2xl"></i>
+        </a>
+        
+        <a href="#blog" class="text-gray-400 hover:text-yellow-500 transition duration-300">
+            <i class="fas fa-edit text-2xl"></i>
+        </a>
+        
+        <a href="#pricing" class="text-gray-400 hover:text-yellow-500 transition duration-300">
+            <i class="fas fa-dollar-sign text-2xl"></i>
+        </a>
+        
+        <a href="#contact" class="text-gray-400 hover:text-yellow-500 transition duration-300">
+            <i class="fas fa-phone text-2xl"></i>
+        </a>
+    </aside>
+</section>
+
+    <!-- Main Content -->
+    <main class="relative w-full min-h-screen flex flex-col md:flex-row mt-20 md:mt-24 px-4 md:px-8 lg:px-10">
+        <!-- Image Content Area - Visible on All Screens -->
+        <div class="w-full md:w-[400px] lg:w-[550px] h-[400px] md:h-[600px] md:absolute top-24 left-4 md:left-8 lg:left-[90px] bg-black z-20">
+            <img src="./assets/profile.png" alt="Profile Image" class="w-full h-full object-cover rounded-lg shadow-none">
+        </div>
+
+        <!-- Right Side Content Area -->
+        <div class="hidden md:block w-full md:w-[500px] lg:w-[650px] h-auto md:h-[500px] md:absolute top-24 left-[450px] lg:left-[750px] bg-[#1F2421] p-6 md:p-8 rounded-[30px] md:rounded-[50px] shadow-lg z-20 mt-4 md:mt-0">
+            <p class="text-yellow-500 uppercase font-bold text-sm md:text-base">Introduction</p>
+            <h2 class="text-2xl md:text-4xl font-bold mt-2">I'm a Creative Developer & UI/UX Design Expert</h2>
+            <p class="text-gray-400 mt-2 text-sm md:text-base">24 years / Robert Smith / UK London</p>
+            <p class="text-[#C6C6C6] mt-4 text-sm md:text-base">
+                Prolific, full-stack web developer with a passion for metrics and beating former "best-yets". Prototyped
+                25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently
+                receive high user experience scores for all web development projects, including a 55% increase for
+                Flexor, Inc. Passionate about building world-class web applications. One of my sites received a 2020
+                Webby for Best Navigation and Structure.
+            </p>
+            <!-- Download CV Button -->
+      <button class="border border-yellow-500 text-yellow-500 px-6 py-2 mt-6 rounded-full flex items-center hover:bg-yellow-500 hover:text-white hover:border-yellow-500 transition duration-300 text-sm md:text-base">
+    Download CV <i class="fas fa-download ml-2"></i>
+</button>
+        <!-- Content  -->
+        <div class="md:hidden w-full mt-8">
+            <p class="text-yellow-500 uppercase font-bold text-sm">Introduction</p>
+            <h2 class="text-2xl font-bold mt-2">I'm a Creative Developer & UI/UX Design Expert</h2>
+            <p class="text-gray-400 mt-2 text-sm">24 years / Robert Smith / UK London</p>
+            <p class="text-[#C6C6C6] mt-4 text-sm">
+                Prolific, full-stack web developer with a passion for metrics and beating former "best-yets". Prototyped
+                25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently
+                receive high user experience scores for all web development projects, including a 55% increase for
+                Flexor, Inc. Passionate about building world-class web applications. One of my sites received a 2020
+                Webby for Best Navigation and Structure.
+            </p>
+            <!-- Download CV Button  -->
+            <button class="border border-white text-white px-6 py-2 mt-6 rounded-full flex items-center hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition duration-300 text-sm">
+                Download CV <i class="fas fa-download ml-2"></i>
+            </button>
+        </div>
+    </main>
+     <!-- Right Sidebar Background -->
+     <div class="absolute w-[92px] h-[433px] right-0 top-[374px] diagonal-right"></div>
+
+     <!-- Right Sidebar -->
+     <aside class="fixed right-0 top-0 flex flex-col justify-between items-center h-full py-8 z-20 space-y-6 w-20">
+         <!-- Copyright Info (Middle) -->
+         <div class="absolute top-1/2 transform -translate-y-1/2 rotate-[-90deg] text-center text-white font-normal text-xs w-48 whitespace-nowrap">
+             © design by themefisher developed by gethugothemes
+         </div>
+ 
+         <!-- Language Buttons (Bottom) -->
+         <div class="absolute bottom-8 flex flex-col items-center space-y-2">
+             <button class="bg-gray-700 text-white px-3 py-1 rounded-full">Fr</button>
+             <button class="gradient-button text-black px-3 py-1 rounded-full">En</button>
+         </div>
+     </aside>
+
+  
+    
+<!-- About Section -->
+<section id="about" class="text-white py-12 px-4 sm:px-6 md:px-8 w-full max-w-[1100px] mx-auto">
+    <div class="flex justify-end w-full">
+        <!-- About Section Content -->
+        <div class="w-full lg:w-1/2">
+            <!-- Resume Heading -->
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Resume</h2>
+
+            <!-- Education Section -->
+            <div class="mb-12">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-graduation-cap text-orange-500 mr-2"></i>
+                    <h3 class="text-xl font-semibold">Education</h3>
+                </div>
+                <div class="border-l-2 border-gray-600 pl-4 sm:pl-6 relative ml-4 sm:ml-0">
+
+                    <!-- Education Item 1 -->
+                    <div class="mb-6 relative">
+                        <!-- Adjusted diamond shape positioning -->
+                        <span class="absolute -left-[9px] w-3 h-3 sm:w-4 sm:h-4 bg-gray-600 transform rotate-45"></span>
+                        <p class="bg-gray-800 text-sm px-3 py-1 rounded inline-block mb-2">2016-2020</p>
+                        <h4 class="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 inline-block text-transparent bg-clip-text">
+                            Harvard University</h4>
+                        <p class="text-gray-400">B.A. and M.S., Computer Science</p>
+                        <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="mb-6 relative">
+                        <!-- Adjusted diamond shape positioning -->
+                        <span class="absolute -left-[9px] w-3 h-3 sm:w-4 sm:h-4 bg-gray-600 transform rotate-45"></span>
+                        <p class="bg-gray-800 text-sm px-3 py-1 rounded inline-block mb-2">2014-2016</p>
+                        <h4 class="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 inline-block text-transparent bg-clip-text">
+                            Helwan University</h4>
+                        <p class="text-gray-400">Bachelor Degree</p>
+                        <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work History Section -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-briefcase text-orange-500 mr-2"></i>
+                    <h3 class="text-xl font-semibold">Work History</h3>
+                </div>
+                <div class="border-l-2 border-gray-600 pl-4 sm:pl-6 relative ml-4 sm:ml-0">
+
+                    <!-- Work Item 1 -->
+                    <div class="mb-6 relative">
+                        <!-- Adjusted diamond shape positioning -->
+                        <span class="absolute -left-[9px] w-3 h-3 sm:w-4 sm:h-4 bg-gray-600 transform rotate-45"></span>
+                        <p class="bg-gray-800 text-sm px-3 py-1 rounded inline-block mb-2">2016-2022</p>
+                        <h4 class="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 inline-block text-transparent bg-clip-text">
+                            UI/UX Design</h4>
+                        <p class="text-gray-400">Web Site Design</p>
+                        <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                    <!-- Work Item 2 -->
+                    <div class="mb-6 relative">
+                        <!-- Adjusted diamond shape positioning -->
+                        <span class="absolute -left-[9px] w-3 h-3 sm:w-4 sm:h-4 bg-gray-600 transform rotate-45"></span>
+                        <p class="bg-gray-800 text-sm px-3 py-1 rounded inline-block mb-2">2012-2016</p>
+                        <h4 class="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 inline-block text-transparent bg-clip-text">
+                            Junior Web Designer</h4>
+                        <p class="text-gray-400">Product Designer</p>
+                        <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mb-12 mt-12">
+                <h3 class="text-3xl sm:text-4xl font-semibold mb-4">Skills</h3>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm">UI/UX Design</p>
+                        <div class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                            95%</div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="h-2.5 rounded-full"
+                                style="width: 95%; background: linear-gradient(89.71deg, #F5BD4D 0.36%, #F89222 99.88%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm">Photography</p>
+                        <div class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                            90%</div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="h-2.5 rounded-full"
+                                style="width: 90%; background: linear-gradient(89.71deg, #F5BD4D 0.36%, #F89222 99.88%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm">Creativity</p>
+                        <div class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                            80%</div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="h-2.5 rounded-full"
+                                style="width: 80%; background: linear-gradient(89.71deg, #F5BD4D 0.36%, #F89222 99.88%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm">Team Work</p>
+                        <div class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                            95%</div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="h-2.5 rounded-full"
+                                style="width: 95%; background: linear-gradient(89.71deg, #F5BD4D 0.36%, #F89222 99.88%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm">Web Design</p>
+                        <div class="text-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                            95%</div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="h-2.5 rounded-full"
+                                style="width: 95%; background: linear-gradient(89.71deg, #F5BD4D 0.36%, #F89222 99.88%);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<!-- Portfolio Section -->
+<section id="portfolio" class="relative md:absolute w-full max-w-[688px] h-auto md:top-[1900px] md:left-[70%] md:transform md:-translate-x-1/2 text-white py-12 px-4 md:px-8 lg:px-12">
+    <h1 class="text-3xl font-bold mb-6 text-left">Portfolio</h1>
+    
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-left space-x-4 mb-8">
+        <button class="text-gray-400 border-b-2 border-yellow-500 pb-1 hover:text-yellow-500">All</button>
+        <button class="text-gray-400 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 pb-1">Graphic Design</button>
+        <button class="text-gray-400 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 pb-1">Mobile App</button>
+        <button class="text-gray-400 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 pb-1">Photography</button>
+        <button class="text-gray-400 hover:text-yellow-500 hover:border-b-2 hover:border-yellow-500 pb-1">UI/UX Design</button>
+    </div>
+    
+    <!-- Image Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Left Side (3 Images) -->
+        <div class="flex flex-col space-y-4">
+            <div class="relative group w-full h-[200px] sm:h-[321px]">
+                <img src="./assets/P-1.png" alt="Figma Mockup" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Figma Mockup</p>
+                    <p class="text-gray-300">Figma mockup PSD editable</p>
+                </div>
+            </div>
+            <div class="relative group w-full h-[300px] sm:h-[447px]">
+                <img src="./assets/P-3.png" alt="Smartwatch UI" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Smartwatch UI</p>
+                    <p class="text-gray-300">Modern smartwatch interface</p>
+                </div>
+            </div>
+            <div class="relative group w-full h-[150px] sm:h-[220px]">
+                <img src="./assets/P-6.png" alt="Sticky Notes Design" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Sticky Notes</p>
+                    <p class="text-gray-300">Minimalist note design</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Side (4 Images) -->
+        <div class="flex flex-col space-y-4">
+            <div class="relative group w-full h-[200px] sm:h-[243px]">
+                <img src="./assets/P-2.png" alt="Bag Design" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Bag Design</p>
+                    <p class="text-gray-300">Premium bag prototype</p>
+                </div>
+            </div>
+            <div class="relative group w-full h-[200px] sm:h-[243px]">
+                <img src="./assets/P-4.png" alt="Mobile App UI" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Mobile App UI</p>
+                    <p class="text-gray-300">Sleek mobile interface</p>
+                </div>
+            </div>
+            <div class="relative group w-full h-[200px] sm:h-[243px]">
+                <img src="./assets/P-7.png" alt="Website UI" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Website UI</p>
+                    <p class="text-gray-300">Modern web interface</p>
+                </div>
+            </div>
+            <div class="relative group w-full h-[200px] sm:h-[243px]">
+                <img src="./assets/P-5.png" alt="Bag Concept" class="w-full h-full object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center transition duration-300 rounded-lg">
+                    <p class="text-white font-bold">Bag Concept</p>
+                    <p class="text-gray-300">Stylish bag prototype</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="relative md:absolute w-full md:w-[700px] h-auto md:top-[3150px] md:left-[808px] text-white py-12 px-4 font-['DM_Sans']">
+    <h1 class="text-3xl font-bold mb-6">Blog</h1>
+    
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-y-12">
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Bl-1.png" alt="Blog Image 1" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">Photography | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">The artist vocation is to send light into the human heart.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center mt-4 text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Bl-3.png" alt="Blog Image 3" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">Graphic design | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">There are countless versions of lorem ipsum, the most famous.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center  text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222] "></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Br-2.png" alt="Blog Image 5" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">UI Design | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">UI Interactions of the week.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center mt-4 text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex flex-col gap-y-12">
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Bl-2.png" alt="Blog Image 2" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">Adventure | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">The mission of art is to represent nature not to imitate her.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center mt-4 text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Br-1.png" alt="Blog Image 4" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">Travel | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">The principles of true art is not to portray, but to evoke.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center mt-4 text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full md:w-[350px] h-auto bg-black rounded-lg overflow-hidden">
+                <img src="./assets/Br-3.png" alt="Blog Image 6" class="w-full h-[200px] md:h-[60%] object-cover">
+                <div class="p-4">
+                    <p class="text-[#747474] text-[12px] font-normal">Travel | 18 Apr 2022</p>
+                    <h2 class="font-bold text-[18px] text-white mt-1">Party Jokes Starting But Unnecessary.</h2>
+                    <p class="text-[#979797] text-[14px] font-normal mt-2">Lorem Ipsum is simply dummy text of the printing typography industry.</p>
+
+                    <!-- Author Section -->
+                    <div class="flex items-center justify-center mt-4 text-[#FFFFFF] text-[14px] font-medium">
+                        <div class="w-10  border-[1px] border-[#F89222]"></div>
+                        <span class="mx-2">Posted By Daryl Smith</span>
+                        <div class="w-10 border-t border-[1px] border-[#F89222]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="relative md:absolute w-full md:w-[688px] h-auto md:top-[4800px] md:left-[808px] text-white font-['DM_Sans'] py-12 px-4 md:px-8 lg:px-12">
+    <h1 class="text-left text-3xl font-bold mb-6">Pricing</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Pricing Card 1 -->
+        <div class="relative w-full md:w-[308px] h-auto bg-black border border-solid border-transparent border-image-source-[linear-gradient(89.71deg,_#F5BD4D_0.36%,_#F89222_99.88%)] rounded-lg flex flex-col justify-between p-6">
+            <span class="absolute top-[20px] left-0 w-[107px] h-[32px] bg-[linear-gradient(89.71deg,_rgba(245,189,77,0.3)_0.36%,_rgba(248,146,34,0.3)_99.88%)] text-white flex items-center justify-center rounded-tr-[50px] rounded-br-[50px] text-sm font-bold">Intro</span>
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold">$29 <span class="text-sm font-normal">/ month</span></h2>
+                <div class="bg-[#121414] p-4 mt-4 rounded-md">
+                    <p>Interface Design</p>
+                    <p>Front-end Code</p>
+                    <p>Back-end Development</p>
+                    <p class="line-through text-[#979797]">Search Engine Optimization</p>
+                    <p class="line-through text-[#979797]">Awesome Support</p>
+                    <p class="line-through text-[#979797]">Responsive site</p>
+                    <p class="line-through text-[#979797]">Easy in use</p>
+                    <p class="line-through text-[#979797]">Useful site</p>
+                    <p class="line-through text-[#979797]">Speedy web</p>
+                </div>
+            </div>
+            <button class="mt-auto w-[139px] h-[45px] bg-transparent border border-[#F5BD4D] text-[#F5BD4D] font-bold rounded-md hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222] hover:text-black">Get Started</button>
+        </div>
+
+        <!-- Pricing Card 2 -->
+        <div class="relative w-full md:w-[308px] h-auto bg-black border border-solid border-transparent border-image-source-[linear-gradient(89.71deg,_#F5BD4D_0.36%,_#F89222_99.88%)] rounded-lg flex flex-col justify-between p-6">
+            <span class="absolute top-[20px] left-0 w-[107px] h-[32px] bg-[linear-gradient(89.71deg,_rgba(245,189,77,0.3)_0.36%,_rgba(248,146,34,0.3)_99.88%)] text-white flex items-center justify-center rounded-tr-[50px] rounded-br-[50px] text-sm font-bold">Base</span>
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold">$49 <span class="text-sm font-normal">/ month</span></h2>
+                <div class="bg-[#121414] p-4 mt-4 rounded-md">
+                    <p>Interface Design</p>
+                    <p>Front-end Code</p>
+                    <p>Back-end Development</p>
+                    <p>Search Engine Optimization</p>
+                    <p class="line-through text-[#979797]">Awesome Support</p>
+                    <p>Responsive site</p>
+                    <p class="line-through text-[#979797]">Easy in use</p>
+                    <p class="line-through text-[#979797]">Useful site</p>
+                    <p class="line-through text-[#979797]">Speedy web</p>
+                </div>
+            </div>
+            <button class="mt-auto w-[139px] h-[45px] bg-transparent border border-[#F5BD4D] text-[#F5BD4D] font-bold rounded-md hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222] hover:text-black">Get Started</button>
+        </div>
+
+        <!-- Pricing Card 3 -->
+        <div class="relative w-full md:w-[308px] h-auto bg-black border border-solid border-transparent border-image-source-[linear-gradient(89.71deg,_#F5BD4D_0.36%,_#F89222_99.88%)] rounded-lg flex flex-col justify-between p-6">
+            <span class="absolute top-[20px] left-0 w-[107px] h-[32px] bg-[linear-gradient(89.71deg,_rgba(245,189,77,0.3)_0.36%,_rgba(248,146,34,0.3)_99.88%)] text-white flex items-center justify-center rounded-tr-[50px] rounded-br-[50px] text-sm font-bold">Popular</span>
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold">$99 <span class="text-sm font-normal">/ month</span></h2>
+                <div class="bg-[#121414] p-4 mt-4 rounded-md">
+                    <p>Interface Design</p>
+                    <p>Front-end Code</p>
+                    <p>Back-end Development</p>
+                    <p>Search Engine Optimization</p>
+                    <p>Awesome Support</p>
+                    <p>Responsive site</p>
+                    <p class="line-through text-[#979797]">Easy in use</p>
+                    <p class="line-through text-[#979797]">Useful site</p>
+                    <p class="line-through text-[#979797]">Speedy web</p>
+                </div>
+            </div>
+            <button class="mt-auto w-[139px] h-[45px] bg-transparent border border-[#F5BD4D] text-[#F5BD4D] font-bold rounded-md hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222] hover:text-black">Get Started</button>
+        </div>
+
+        <!-- Pricing Card 4 -->
+        <div class="relative w-full md:w-[308px] h-auto bg-black border border-solid border-transparent border-image-source-[linear-gradient(89.71deg,_#F5BD4D_0.36%,_#F89222_99.88%)] rounded-lg flex flex-col justify-between p-6">
+            <span class="absolute top-[20px] left-0 w-[107px] h-[32px] bg-[linear-gradient(89.71deg,_rgba(245,189,77,0.3)_0.36%,_rgba(248,146,34,0.3)_99.88%)] text-white flex items-center justify-center rounded-tr-[50px] rounded-br-[50px] text-sm font-bold">Enterprise</span>
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold">$199 <span class="text-sm font-normal">/ month</span></h2>
+                <div class="bg-[#121414] p-4 mt-4 rounded-md">
+                    <p>Interface Design</p>
+                    <p>Full-stack Development</p>
+                    <p>Advanced SEO</p>
+                    <p>24/7 Support</p>
+                    <p>Custom Features</p>
+                </div>
+            </div>
+            <button class="mt-auto w-[139px] h-[45px] bg-transparent border border-[#F5BD4D] text-[#F5BD4D] font-bold rounded-md hover:bg-gradient-to-r from-[#F5BD4D] to-[#F89222] hover:text-black">Get Started</button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="relative md:absolute w-full md:w-[687px] h-auto md:top-[5900px] md:left-[808px] text-white font-['DM_Sans'] p-6 rounded-[10px]">
+    <h1 class="text-left text-3xl font-bold mb-6">Contact</h1>
+    <form class="space-y-4">
+        <!-- Name Inputs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label class="mb-1 text-sm">First name*</label>
+                <input type="text" class="w-full h-[40px] bg-[#000000] border border-[#F5BD4D] rounded-md p-2" />
+            </div>
+            <div class="flex flex-col">
+                <label class="mb-1 text-sm">Last name*</label>
+                <input type="text" class="w-full h-[40px] bg-[#000000] border border-[#F5BD4D] rounded-md p-2" />
+            </div>
+        </div>
+
+        <!-- Email and Phone Inputs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col">
+                <label class="mb-1 text-sm">Email*</label>
+                <input type="email" class="w-full h-[40px] bg-[#000000] border border-[#F5BD4D] rounded-md p-2" />
+            </div>
+            <div class="flex flex-col">
+                <label class="mb-1 text-sm">Phone*</label>
+                <input type="text" class="w-full h-[40px] bg-[#000000] border border-[#F5BD4D] rounded-md p-2" />
+            </div>
+        </div>
+
+        <!-- Message Textarea -->
+        <div class="flex flex-col">
+            <label class="mb-1 text-sm">Message*</label>
+            <textarea class="w-full h-[150px] bg-[#000000] border border-[#F5BD4D] rounded-md p-2"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="w-full h-[45px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] text-[#ffffff] font-bold rounded-md hover:opacity-80">Send message</button>
+    </form>
+</section>
+
+<!-- Mask Group -->
+<div class="absolute w-[1920px] h-[0px] top-[7980px] opacity-10 bg-black"></div>
+</body>
+
+</html>
