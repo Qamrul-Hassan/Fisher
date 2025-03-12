@@ -107,9 +107,8 @@
     "yaml": "^2.7.0"
   },
   "scripts": {
-  "build": "postcss src/input.css -o src/output.css",
-  "start": "serve public"
-
+    "build": "npx postcss src/input.css -o src/output.css",
+    "start": "serve public"
   },
   "keywords": [],
   "author": "",
