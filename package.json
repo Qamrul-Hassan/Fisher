@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.13"
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.3",
+    "tailwindcss": "3.4.13"
   },
   "name": "fisher",
   "version": "1.0.0",
@@ -72,7 +72,7 @@
     "picomatch": "^2.3.1",
     "pify": "^2.3.0",
     "pirates": "^4.0.6",
-    "postcss-cli": "^11.0.1",
+    "postcss-cli": "10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-js": "^4.0.1",
     "postcss-load-config": "^4.0.2",
@@ -113,5 +113,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qamrul-Hassan/Fisher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qamrul-Hassan/Fisher/issues"
+  },
+  "homepage": "https://github.com/Qamrul-Hassan/Fisher#readme",
   "description": ""
 }
