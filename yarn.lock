@@ -913,7 +913,7 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
-wrap-ansi-cjs@^7.0.0:
+wrap-ansi-cjs@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi-cjs/-/wrap-ansi-cjs-8.0.0.tgz#e9b2e842f42a1787e598f15669201f3178e1f79e"
   integrity sha512-ulIS1SVkr+L2i8Zdp7x7ghDD3HCrrGXnMJ5ZbT1F9HBDugpT9o0e9qkCHj6cXJRLQYHy1xlY2i9BzvvSV/C8sQ==
