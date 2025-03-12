@@ -753,7 +753,7 @@ source-map-js@^1.2.1:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
-string-width-cjs@^4.2.3:
+string-width-cjs@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/string-width-cjs/-/string-width-cjs-5.1.1.tgz#9db7e00211027471870621778b089402cf9bdee3"
   integrity sha512-N5/f0RNFtXPNDLtEvo8Y/+mH4xZWzIAnnqXPzCB4BBAQL8P3sHlz0dqDzTkGQoVsL56aCsORFFlyvA70k5yq3A==
